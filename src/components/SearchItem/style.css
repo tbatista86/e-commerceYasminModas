@@ -1,0 +1,24 @@
+.search__content {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+
+.search__content img {
+  width: 80px;
+  height: 110px;
+  margin-top: 5px;
+}
+
+.search__sizes {
+  display: flex;
+}
+
+.search__price p {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.search__size {
+  margin-left: 5px;
+}
