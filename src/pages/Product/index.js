@@ -10,11 +10,11 @@ export default function Product(props) {
 
   const dispatch = useDispatch();
 
-  console.log(props);
-
   const [...btnsSize] = props.location.state.product.sizes;
 
   const productCart = props.location.state.product;
+
+  console.log(productCart.discount_percentage);
 
   function handleAddCart(product) {
     if (!size) return alert('Escolha o tamanho do produto');
@@ -65,7 +65,12 @@ export default function Product(props) {
 
       <div className="product__price">
         <h1>{props.location.state.product.name}</h1>
-        <p>{props.location.state.product.regular_price}</p>
+        {props.location.state.product.on_sale ? (
+          <p className="product__discount">
+            -{productCart.discount_percentage}
+          </p>
+        ) : null}
+        <p>{props.location.state.product.actual_price}</p>
         <p className="product__text">
           {props.location.state.product.installments}
         </p>

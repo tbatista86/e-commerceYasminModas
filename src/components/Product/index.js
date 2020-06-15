@@ -19,11 +19,16 @@ export default function Product({ product }) {
           alt={product.name}
           style={{ width: '100%' }}
         />
-        <div className="container">
+        <div className="card__container">
           <h4>
             <b>{product.name}</b>
           </h4>
-          <p>{product.regular_price}</p>
+          <div className="card__price">
+            {product.on_sale ? (
+              <p className="card__discount">-{product.discount_percentage}</p>
+            ) : null}
+            <p>{product.actual_price}</p>
+          </div>
         </div>
       </Link>
     </div>

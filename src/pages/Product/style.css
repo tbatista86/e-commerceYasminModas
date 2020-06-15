@@ -10,6 +10,14 @@
   margin-top: 90px;
 }
 
+.product__discount {
+  background: #000;
+  color: #fff;
+  width: 40px;
+  padding: 5px;
+  border-radius: 7px 0 7px 0;
+}
+
 .product__price {
   height: '100%';
 }

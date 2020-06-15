@@ -19,3 +19,17 @@
   padding: 2px 16px;
   background-color: rgb(214, 205, 205);
 }
+.card__discount {
+  color: #fff;
+  background: #000;
+  width: 40px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 7px 0 7px 0;
+  margin-right: 10px;
+}
+
+.card__price {
+  display: flex;
+  align-items: center;
+}
