@@ -25,7 +25,13 @@ export default function Product({ product }) {
           </h4>
           <div className="card__price">
             {product.on_sale ? (
-              <p className="card__discount">-{product.discount_percentage}</p>
+              <div className="card__discount__body">
+                <p className="card__discount">
+                  -{product.discount_percentage}{' '}
+                </p>
+
+                <s>{product.regular_price}</s>
+              </div>
             ) : null}
             <p>{product.actual_price}</p>
           </div>

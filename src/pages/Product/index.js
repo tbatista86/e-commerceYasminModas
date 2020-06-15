@@ -70,7 +70,10 @@ export default function Product(props) {
             -{productCart.discount_percentage}
           </p>
         ) : null}
-        <p>{props.location.state.product.actual_price}</p>
+        <p>
+          {props.location.state.product.actual_price} -{' '}
+          <s>{props.location.state.product.regular_price}</s>
+        </p>
         <p className="product__text">
           {props.location.state.product.installments}
         </p>

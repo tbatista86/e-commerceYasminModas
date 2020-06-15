@@ -28,6 +28,15 @@
   border-radius: 7px 0 7px 0;
   margin-right: 10px;
 }
+.card__discount__body {
+  display: flex;
+  align-items: center;
+}
+
+.card__discount__body s {
+  color: #fff;
+  margin-right: 2px;
+}
 
 .card__price {
   display: flex;
