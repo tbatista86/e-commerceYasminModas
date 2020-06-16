@@ -15,10 +15,10 @@ const Header = (props) => {
           <span className="header__logo">Yasmin Modas</span>
         </NavLink>
         <ul>
-          <NavLink to="/search" onClick={props.drawerSearchClick}>
+          <NavLink to="/" onClick={props.drawerSearchClick}>
             <img src={search} alt="pesquisa" className="header__icon" />
           </NavLink>
-          <NavLink to="/cart" onClick={props.drawerClickHandler}>
+          <NavLink to="/" onClick={props.drawerClickHandler}>
             <img src={cart} alt="carrinho" className="header__icon" />
             <span className="header__count">{cartCount}</span>
           </NavLink>
